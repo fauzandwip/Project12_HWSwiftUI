@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7B9820F22A4EBB0D00AD8B82 /* HashableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */; };
+		7B9820FD2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */; };
+		7B9820FE2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820FC2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift */; };
 		7BE3AC142A4B440C00998EA6 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3AC132A4B440C00998EA6 /* CoreDataProjectApp.swift */; };
 		7BE3AC162A4B440C00998EA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3AC152A4B440C00998EA6 /* ContentView.swift */; };
 		7BE3AC182A4B440D00998EA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE3AC172A4B440D00998EA6 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableView.swift; sourceTree = "<group>"; };
+		7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7B9820FC2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7BE3AC102A4B440C00998EA6 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE3AC132A4B440C00998EA6 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		7BE3AC152A4B440C00998EA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +45,7 @@
 		7B9820F92A4EC2C300AD8B82 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
+				7B9820FF2A4EC3DF00AD8B82 /* NSManagedObject */,
 				7B9820FA2A4EC2D000AD8B82 /* Hashable */,
 			);
 			path = Introduction;
@@ -52,6 +57,15 @@
 				7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */,
 			);
 			path = Hashable;
+			sourceTree = "<group>";
+		};
+		7B9820FF2A4EC3DF00AD8B82 /* NSManagedObject */ = {
+			isa = PBXGroup;
+			children = (
+				7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */,
+				7B9820FC2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift */,
+			);
+			path = NSManagedObject;
 			sourceTree = "<group>";
 		};
 		7BE3AC072A4B440C00998EA6 = {
@@ -166,6 +180,8 @@
 				7BE3AC272A4B446300998EA6 /* DataController.swift in Sources */,
 				7BE3AC252A4B444D00998EA6 /* CoreDataProject.xcdatamodeld in Sources */,
 				7B9820F22A4EBB0D00AD8B82 /* HashableView.swift in Sources */,
+				7B9820FD2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift in Sources */,
+				7B9820FE2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift in Sources */,
 				7BE3AC142A4B440C00998EA6 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
