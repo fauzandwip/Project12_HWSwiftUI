@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2A47732A4F2B0900151C9B /* DynamicFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A47722A4F2B0900151C9B /* DynamicFilterView.swift */; };
+		7B2A47762A4F2B6D00151C9B /* Singer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A47742A4F2B6D00151C9B /* Singer+CoreDataClass.swift */; };
+		7B2A47772A4F2B6D00151C9B /* Singer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A47752A4F2B6D00151C9B /* Singer+CoreDataProperties.swift */; };
+		7B2A47792A4F2C6800151C9B /* FilteredList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2A47782A4F2C6800151C9B /* FilteredList.swift */; };
 		7B5CD41B2A4F24590062E332 /* NSPredicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CD41A2A4F24590062E332 /* NSPredicateView.swift */; };
 		7B9820F22A4EBB0D00AD8B82 /* HashableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */; };
 		7B9820FD2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B2A47722A4F2B0900151C9B /* DynamicFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilterView.swift; sourceTree = "<group>"; };
+		7B2A47742A4F2B6D00151C9B /* Singer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataClass.swift"; path = "CoreDataProject/Singer+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		7B2A47752A4F2B6D00151C9B /* Singer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Singer+CoreDataProperties.swift"; path = "CoreDataProject/Singer+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		7B2A47782A4F2C6800151C9B /* FilteredList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredList.swift; sourceTree = "<group>"; };
 		7B5CD41A2A4F24590062E332 /* NSPredicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPredicateView.swift; sourceTree = "<group>"; };
 		7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableView.swift; sourceTree = "<group>"; };
 		7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -52,6 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				7B5CD41A2A4F24590062E332 /* NSPredicateView.swift */,
+				7B2A47742A4F2B6D00151C9B /* Singer+CoreDataClass.swift */,
+				7B2A47752A4F2B6D00151C9B /* Singer+CoreDataProperties.swift */,
+				7B2A47722A4F2B0900151C9B /* DynamicFilterView.swift */,
+				7B2A47782A4F2C6800151C9B /* FilteredList.swift */,
 			);
 			path = NSPredicate;
 			sourceTree = "<group>";
@@ -209,10 +221,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B2A47772A4F2B6D00151C9B /* Singer+CoreDataProperties.swift in Sources */,
 				7BE3AC162A4B440C00998EA6 /* ContentView.swift in Sources */,
 				7BE3AC272A4B446300998EA6 /* DataController.swift in Sources */,
+				7B2A47732A4F2B0900151C9B /* DynamicFilterView.swift in Sources */,
 				7BE3AC252A4B444D00998EA6 /* CoreDataProject.xcdatamodeld in Sources */,
 				7B9820F22A4EBB0D00AD8B82 /* HashableView.swift in Sources */,
+				7B2A47792A4F2C6800151C9B /* FilteredList.swift in Sources */,
+				7B2A47762A4F2B6D00151C9B /* Singer+CoreDataClass.swift in Sources */,
 				7B9820FD2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift in Sources */,
 				7B9820FE2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift in Sources */,
 				7B9821022A4EC4AC00AD8B82 /* ConditionalSaving.swift in Sources */,
