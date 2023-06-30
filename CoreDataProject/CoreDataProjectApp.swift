@@ -13,7 +13,7 @@ struct CoreDataProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ConstaintsView()
+            NSPredicateView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }

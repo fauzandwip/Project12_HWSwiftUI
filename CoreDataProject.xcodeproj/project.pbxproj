@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B5CD41B2A4F24590062E332 /* NSPredicateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CD41A2A4F24590062E332 /* NSPredicateView.swift */; };
 		7B9820F22A4EBB0D00AD8B82 /* HashableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */; };
 		7B9820FD2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */; };
 		7B9820FE2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9820FC2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B5CD41A2A4F24590062E332 /* NSPredicateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSPredicateView.swift; sourceTree = "<group>"; };
 		7B9820F12A4EBB0D00AD8B82 /* HashableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableView.swift; sourceTree = "<group>"; };
 		7B9820FB2A4EC3CA00AD8B82 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B9820FC2A4EC3CA00AD8B82 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B5CD41C2A4F245E0062E332 /* NSPredicate */ = {
+			isa = PBXGroup;
+			children = (
+				7B5CD41A2A4F24590062E332 /* NSPredicateView.swift */,
+			);
+			path = NSPredicate;
+			sourceTree = "<group>";
+		};
 		7B9820F92A4EC2C300AD8B82 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +63,7 @@
 				7B9820FF2A4EC3DF00AD8B82 /* NSManagedObject */,
 				7B9821002A4EC48200AD8B82 /* mocSaving */,
 				7B9821052A4EEACC00AD8B82 /* Constraints */,
+				7B5CD41C2A4F245E0062E332 /* NSPredicate */,
 			);
 			path = Introduction;
 			sourceTree = "<group>";
@@ -207,6 +218,7 @@
 				7B9821022A4EC4AC00AD8B82 /* ConditionalSaving.swift in Sources */,
 				7BE3AC142A4B440C00998EA6 /* CoreDataProjectApp.swift in Sources */,
 				7B9821042A4EEAA300AD8B82 /* ConstaintsView.swift in Sources */,
+				7B5CD41B2A4F24590062E332 /* NSPredicateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
