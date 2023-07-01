@@ -17,10 +17,8 @@ enum Predicates: String {
     case endsWithCaseInsensitive = "ENDSWITH[c]"
 }
 
-struct FilteringChallenge<Entity: NSManagedObject, ContentView: View>: View {
-        
+struct FilteredListChallenge<Entity: NSManagedObject, ContentView: View>: View {
     @FetchRequest var fetchRequest: FetchedResults<Entity>
-    
     var view: (Entity) -> ContentView
         
     var body: some View {
@@ -29,8 +27,47 @@ struct FilteringChallenge<Entity: NSManagedObject, ContentView: View>: View {
         }
     }
     
-    init(predicate: Predicates, filterKey: String, filterValue: String, @ViewBuilder view: @escaping (Entity) -> ContentView) {
-        _fetchRequest = FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "%K \(predicate.rawValue) %@", filterKey, filterValue))
+    init(predicate: Predicates, filterKey: String, filterValue: String, sortDescriptors: [SortDescriptor<Entity>], @ViewBuilder view: @escaping (Entity) -> ContentView) {
+        _fetchRequest = FetchRequest(sortDescriptors: sortDescriptors, predicate: NSPredicate(format: "%K \(predicate.rawValue) %@", filterKey, filterValue))
         self.view = view
+    }
+}
+
+struct FilteringChallenge: View {
+    @Environment(\.managedObjectContext) var moc
+    @State private var lastNameFilter = "A"
+    
+    private var sortDescriptor = [SortDescriptor(\Singer.lastName, order: .forward)]
+    
+    var body: some View {
+        VStack {
+            FilteredListChallenge(predicate: Predicates.beginsWith, filterKey: "lastName", filterValue: lastNameFilter, sortDescriptors: sortDescriptor) { (singer: Singer) in
+                Text("\(singer.wrappedFirstName) \(singer.wrappedLastName)")
+            }
+            
+            Button("Add Example") {
+                let taylor = Singer(context: moc)
+                taylor.firstName = "Taylor"
+                taylor.lastName = "Swift"
+                
+                let ed = Singer(context: moc)
+                ed.firstName = "Ed"
+                ed.lastName = "Sheeran"
+                
+                let adele = Singer(context: moc)
+                adele.firstName = "Adele"
+                adele.lastName = "Adkins"
+                
+                try? moc.save()
+            }
+            
+            Button("Show A") {
+                lastNameFilter = "A"
+            }
+            
+            Button("Show S") {
+                lastNameFilter = "S"
+            }
+        }
     }
 }

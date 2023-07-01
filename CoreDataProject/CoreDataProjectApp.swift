@@ -13,7 +13,7 @@ struct CoreDataProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            DynamicFilterView()
+            ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
