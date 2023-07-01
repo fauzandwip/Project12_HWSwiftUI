@@ -28,6 +28,7 @@
 		7BE3AC1B2A4B440D00998EA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE3AC1A2A4B440D00998EA6 /* Preview Assets.xcassets */; };
 		7BE3AC252A4B444D00998EA6 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3AC232A4B444D00998EA6 /* CoreDataProject.xcdatamodeld */; };
 		7BE3AC272A4B446300998EA6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE3AC262A4B446300998EA6 /* DataController.swift */; };
+		7BE9829E2A4FFA33004C9018 /* FilteringChallenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9829D2A4FFA33004C9018 /* FilteringChallenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		7BE3AC1A2A4B440D00998EA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7BE3AC242A4B444D00998EA6 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		7BE3AC262A4B446300998EA6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7BE9829D2A4FFA33004C9018 /* FilteringChallenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringChallenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				7BE3AC132A4B440C00998EA6 /* CoreDataProjectApp.swift */,
 				7BE3AC152A4B440C00998EA6 /* ContentView.swift */,
+				7BE9829C2A4FFA0C004C9018 /* Challenge */,
 				7B9820F92A4EC2C300AD8B82 /* Introduction */,
 				7BE3AC262A4B446300998EA6 /* DataController.swift */,
 				7BE3AC232A4B444D00998EA6 /* CoreDataProject.xcdatamodeld */,
@@ -180,6 +183,14 @@
 				7BE3AC1A2A4B440D00998EA6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BE9829C2A4FFA0C004C9018 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				7BE9829D2A4FFA33004C9018 /* FilteringChallenge.swift */,
+			);
+			path = Challenge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 			files = (
 				7B2A47802A4F384C00151C9B /* OneToManyView.swift in Sources */,
 				7BE3AC162A4B440C00998EA6 /* ContentView.swift in Sources */,
+				7BE9829E2A4FFA33004C9018 /* FilteringChallenge.swift in Sources */,
 				7BE3AC272A4B446300998EA6 /* DataController.swift in Sources */,
 				7B2A477D2A4F37AA00151C9B /* Singer+CoreDataClass.swift in Sources */,
 				7B2A47732A4F2B0900151C9B /* DynamicFilterView.swift in Sources */,
