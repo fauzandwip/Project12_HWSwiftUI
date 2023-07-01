@@ -13,7 +13,7 @@ struct CoreDataProjectApp: App {
     
     var body: some Scene {
         WindowGroup {
-            OneToManyView()
+            DynamicFilterView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
