@@ -2,7 +2,7 @@
 //  Candy+CoreDataClass.swift
 //  CoreDataProject
 //
-//  Created by Fauzan Dwi Prasetyo on 30/06/23.
+//  Created by Fauzan Dwi Prasetyo on 03/07/23.
 //
 //
 

@@ -2,7 +2,7 @@
 //  Candy+CoreDataProperties.swift
 //  CoreDataProject
 //
-//  Created by Fauzan Dwi Prasetyo on 30/06/23.
+//  Created by Fauzan Dwi Prasetyo on 03/07/23.
 //
 //
 
@@ -20,9 +20,8 @@ extension Candy {
     @NSManaged public var origin: Country?
     
     public var wrappedName: String {
-        name ?? "Unknown Candy"
+        name ?? "Unknown Name"
     }
-
 }
 
 extension Candy : Identifiable {

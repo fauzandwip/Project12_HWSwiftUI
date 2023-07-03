@@ -35,6 +35,8 @@ struct FilteredListChallenge<Entity: NSManagedObject, ContentView: View>: View {
 
 struct FilteringChallenge: View {
     @Environment(\.managedObjectContext) var moc
+    @FetchRequest(sortDescriptors: []) var singers: FetchedResults<Singer>
+    
     @State private var lastNameFilter = "A"
     
     private var sortDescriptor = [SortDescriptor(\Singer.lastName, order: .forward)]

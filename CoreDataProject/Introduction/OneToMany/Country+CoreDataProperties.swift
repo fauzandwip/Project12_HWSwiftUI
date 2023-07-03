@@ -2,7 +2,7 @@
 //  Country+CoreDataProperties.swift
 //  CoreDataProject
 //
-//  Created by Fauzan Dwi Prasetyo on 30/06/23.
+//  Created by Fauzan Dwi Prasetyo on 03/07/23.
 //
 //
 
@@ -21,20 +21,19 @@ extension Country {
     @NSManaged public var candy: NSSet?
     
     public var wrappedFullName: String {
-        fullName ?? "Unknown Country"
+        fullName ?? "Unknown Full Name"
     }
     
     public var wrappedShortName: String {
-        shortName ?? "Unknown Country"
+        shortName ?? "Unknown Short Name"
     }
-    
+
     public var candyArray: [Candy] {
         let set = candy as? Set<Candy> ?? []
         return set.sorted {
             $0.wrappedName < $1.wrappedName
         }
     }
-
 }
 
 // MARK: Generated accessors for candy

@@ -2,7 +2,7 @@
 //  Singer+CoreDataProperties.swift
 //  CoreDataProject
 //
-//  Created by Fauzan Dwi Prasetyo on 30/06/23.
+//  Created by Fauzan Dwi Prasetyo on 03/07/23.
 //
 //
 
@@ -19,12 +19,12 @@ extension Singer {
     @NSManaged public var firstName: String?
     @NSManaged public var lastName: String?
     
-    var wrappedFirstName: String {
-        firstName ?? "Unknown"
+    public var wrappedFirstName: String {
+        firstName ?? "Unknown First Name"
     }
     
-    var wrappedLastName: String {
-        lastName ?? "Unknown"
+    public var wrappedLastName: String {
+        lastName ?? "Unknown Last Name"
     }
 
 }
